@@ -10,16 +10,8 @@ body {
 nav {
   font-family: "Ubuntu", sans-serif;
 }
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  height: 65px;
-  background-color: black;
-  color: white;
-}
 nav ul li {
-  padding: 0px 10px;
+  font-size: 1.2rem;
 }
 .brand {
   display: flex;
@@ -48,7 +40,6 @@ nav ul li {
 .bottom {
   position: sticky;
   height: 130px;
-  background-color: black;
   color: white;
   bottom: 0;
   display: flex;
@@ -101,4 +92,50 @@ nav ul li {
 .songInfo img {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .songItemConatiner {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .icons i {
+    font-size: 1.5rem;
+  }
+
+  .songInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  .songItemConatiner {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .icons i {
+    font-size: 1.2rem;
+  }
+
+  .songInfo img {
+    width: 50px;
+  }
+
+  .songInfo #masterSongName {
+    font-size: 1rem;
+  }
 }

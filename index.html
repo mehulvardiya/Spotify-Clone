@@ -5,94 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Your favourite music is here</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li class="brand">
-          <img src="./Images/spotify logo.png" alt="Spotify" />Spotify
-        </li>
-        <li>Home</li>
-        <li>About</li>
-      </ul>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand brand" href="#">
+          <img src="./Images/spotify logo.png" alt="Spotify" />
+          Spotify
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <!--  -->
 
-    <div class="container">
+    <!-- Songs List -->
+    <div class="container my-4">
       <div class="songList">
-        <h1>Songs</h1>
-        <div class="songItemConatiner">
-          <div class="songItem">
-            <img alt="Rockstar" class="src" />
-            <span class="songName">Nadaan Parinde</span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >06:26<i
-                  id="1"
-                  class="fa-regular songItemPlay fa-circle-play"
-                ></i></span
-            ></span>
+        <h1 class="mb-4">Songs</h1>
+        <div class="column songItemConatiner">
+          <div class="col-md-12 col-sm-12">
+            <div class="songItem">
+              <img alt="Rockstar" class="src" />
+              <span class="songName">Nadaan Parinde</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >06:26<i
+                    id="1"
+                    class="fa-regular songItemPlay fa-circle-play"
+                  ></i></span
+              ></span>
+            </div>
           </div>
-          <div class="songItem">
-            <img alt="Ae dil hai mushkil" class="src" />
-            <span class="songName">Ae dil hai mushkil</span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >04:29<i
-                  id="2"
-                  class="fa-regular songItemPlay fa-circle-play"
-                ></i></span
-            ></span>
+
+          <div class="col-md-12 col-sm-12">
+            <div class="songItem">
+              <img alt="Ae dil hai mushkil" class="src" />
+              <span class="songName">Ae dil hai mushkil</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >04:29<i
+                    id="2"
+                    class="fa-regular songItemPlay fa-circle-play"
+                  ></i></span
+              ></span>
+            </div>
           </div>
-          <div class="songItem">
-            <img alt="Taras" class="src" />
-            <span class="songName">Taras</span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >02:46<i
-                  id="3"
-                  class="fa-regular songItemPlay fa-circle-play"
-                ></i></span
-            ></span>
+
+          <div class="col-md-12 col-sm-12">
+            <div class="songItem">
+              <img alt="Taras" class="src" />
+              <span class="songName">Taras</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >02:46<i
+                    id="3"
+                    class="fa-regular songItemPlay fa-circle-play"
+                  ></i></span
+              ></span>
+            </div>
           </div>
-          <div class="songItem">
-            <img alt="Tauba Tauba" class="src" />
-            <span class="songName">Tauba Tauba</span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >03:27<i
-                  id="4"
-                  class="fa-regular songItemPlay fa-circle-play"
-                ></i></span
-            ></span>
+
+          <div class="col-md-12 col-sm-12">
+            <div class="songItem">
+              <img alt="Tauba Tauba" class="src" />
+              <span class="songName">Tauba Tauba</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >03:27<i
+                    id="4"
+                    class="fa-regular songItemPlay fa-circle-play"
+                  ></i></span
+              ></span>
+            </div>
           </div>
-          <div class="songItem">
-            <img alt="Aaj Ki Raat" class="src" />
-            <span class="songName">Aaj Ki Raat</span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >03:48<i
-                  id="5"
-                  class="fa-regular songItemPlay fa-circle-play"
-                ></i></span
-            ></span>
+
+          <div class="col-md-12 col-sm-12">
+            <div class="songItem">
+              <img alt="Aaj Ki Raat" class="src" />
+              <span class="songName">Aaj Ki Raat</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >03:48<i
+                    id="5"
+                    class="fa-regular songItemPlay fa-circle-play"
+                  ></i></span
+              ></span>
+            </div>
           </div>
-          <div class="songItem">
-            <img alt="Aaj Ki Raat" class="src" />
-            <span class="songName">Kahani Suno 2.0</span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >02:53<i
-                  id="6"
-                  class="fa-regular songItemPlay fa-circle-play"
-                ></i></span
-            ></span>
+
+          <div class="col-md-12 col-sm-12">
+            <div class="songItem">
+              <img alt="Aaj Ki Raat" class="src" />
+              <span class="songName">Kahani Suno 2.0</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >02:53<i
+                    id="6"
+                    class="fa-regular songItemPlay fa-circle-play"
+                  ></i></span
+              ></span>
+            </div>
           </div>
         </div>
       </div>
       <div class="songBanner"></div>
     </div>
+    <!--  -->
 
-    <div class="bottom">
+    <!--Progress Bar -->
+    <div class="fixed-bottom bottom bg-dark py-3">
       <input
         type="range"
         name="range"
@@ -101,24 +149,34 @@
         value="0"
         max="100"
       />
+
+      <!-- icons -->
       <div class="icons">
-        <!-- icons -->
         <i id="previous" class="fa-solid fa-3x fa-backward-step"></i>
         <i id="masterPlay" class="fa-regular fa-3x fa-circle-play"></i>
         <i id="next" class="fa-solid fa-3x fa-forward-step"></i>
       </div>
 
       <div class="songInfo">
-        <img src="./Images/gif.gif" width="80px" alt="Gif" id="gif" /><span
-          id="masterSongName"
-          >Nadaan Parinde</span
-        >
+        <img
+          src="./Images/gif.gif"
+          width="80px"
+          class="me-2"
+          alt="Gif"
+          id="gif"
+        /><span id="masterSongName">Nadaan Parinde</span>
       </div>
     </div>
+    <!--  -->
 
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/89b6a9c13a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
   </body>
